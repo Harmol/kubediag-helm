@@ -3,9 +3,9 @@ entries:
   kubediag-helm:
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2021-08-25T15:43:59.903240608+08:00"
+    created: "2021-08-25T16:26:19.212852244+08:00"
     description: Helm chart to manage KubeDiag deployment
-    digest: 520cfac99ba84b34091a99660dd038995ab6bbd18b6d750c659caccc470bc489
+    digest: a03b68ae6da20f228c75a339c0fbe7712375eaad0b96b9bebbfd3d0932579a48
     home: https://github.com/kubediag/kubediag-helm
     keywords:
     - kubediag
@@ -19,4 +19,4 @@ entries:
     urls:
     - https://harmol.github.io/kubediag-helm/kubediag-helm-0.1.0.tgz
     version: 0.1.0
-generated: "2021-08-25T15:43:59.902216885+08:00"
+generated: "2021-08-25T16:26:19.210908474+08:00"
