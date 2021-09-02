@@ -25,6 +25,6 @@ metadata:
     rbac.authorization.k8s.io/aggregate-to-edit: "true"
     rbac.authorization.k8s.io/aggregate-to-admin: "true"
 rules:
-- apiGroups: ["diagnosis.kubediag.org"]
-  resources: ["diagnoses", "diagnoses/status", "operations", "operations/status", "operationsets", "operationsets/status", "triggers"]
-  verbs: ["create", "delete", "deletecollection", "patch", "update"]
+  - apiGroups: ["diagnosis.kubediag.org"]
+resources: ["diagnoses", "diagnoses/status", "operations", "operations/status", "operationsets", "operationsets/status", "triggers"]
+   verbs: ["create", "delete", "deletecollection", "patch", "update"]
