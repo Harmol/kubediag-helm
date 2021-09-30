@@ -1,0 +1,13 @@
+{{ if .Values.kubediag.operations.diskUsageScript.enabled }}
+apiVersion: diagnosis.kubediag.org/v1
+kind: OperationSet
+metadata:
+  name: disk-usage-script
+spec:
+  adjacencyList:
+  - id: 0
+    to:
+    - 1
+  - id: 1
+    operation: disk-usage-script
+{{ end }}

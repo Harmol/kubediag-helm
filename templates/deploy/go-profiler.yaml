@@ -1,0 +1,12 @@
+{{ if .Values.kubediag.operations.goProfiler.enabled }}
+apiVersion: diagnosis.kubediag.org/v1
+kind: Operation
+metadata:
+  name: go-profiler
+spec:
+  processor:
+    httpServer:
+      path: /processor/goProfiler
+      scheme: http
+    timeoutSeconds: 60
+{{ end }}

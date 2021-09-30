@@ -1,0 +1,13 @@
+{{ if .Values.kubediag.operations.podListCollector.enabled }}
+apiVersion: diagnosis.kubediag.org/v1
+kind: OperationSet
+metadata:
+  name: pod-list-collector
+spec:
+  adjacencyList:
+  - id: 0
+    to:
+    - 1
+  - id: 1
+    operation: pod-list-collector
+{{ end }}

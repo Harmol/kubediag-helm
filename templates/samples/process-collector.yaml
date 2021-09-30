@@ -1,0 +1,13 @@
+{{ if .Values.kubediag.operations.processCollector.enabled }}
+apiVersion: diagnosis.kubediag.org/v1
+kind: OperationSet
+metadata:
+  name: process-collector
+spec:
+  adjacencyList:
+  - id: 0
+    to:
+    - 1
+  - id: 1
+    operation: process-collector
+{{ end }}

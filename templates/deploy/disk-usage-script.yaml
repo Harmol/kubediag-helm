@@ -1,0 +1,16 @@
+{{ if .Values.kubediag.operations.diskUsageScript.enabled }}
+apiVersion: diagnosis.kubediag.org/v1
+kind: Operation
+metadata:
+  name: disk-usage-script
+spec:
+  processor:
+    scriptRunner:
+      script: |
+        #!/usr/bin/env bash
+        du -sh $1
+      argKeys:
+      - param.operation.disk_usage.path
+      operationResultKey: "disk_usage"
+    timeoutSeconds: 60
+{{ end }}

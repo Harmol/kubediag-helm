@@ -1,0 +1,13 @@
+{{ if .Values.kubediag.operations.containerCollector.enabled }}
+apiVersion: diagnosis.kubediag.org/v1
+kind: OperationSet
+metadata:
+  name: container-collector
+spec:
+  adjacencyList:
+  - id: 0
+    to:
+    - 1
+  - id: 1
+    operation: container-collector
+{{ end }}
