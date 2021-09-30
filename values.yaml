@@ -99,3 +99,32 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+kubediag:
+  operations:
+    containerCollector:
+      enabled: true
+    containerdGoroutineCollector:
+      enabled: true
+    coreFileProfiler:
+      enabled: true
+    diskUsageScript:
+      enabled: true
+    dockerInfoCollector:
+      enabled: true
+    dockerdGoroutineCollector:
+      enabled: true
+    elasticsearchCollector:
+      enabled: true
+    goProfiler:
+      enabled: true
+    mountInfoCollector:
+      enabled: true
+    nodeCordon:
+      enabled: true
+    podDetailCollector:
+      enabled: true
+    podListCollector:
+      enabled: true
+    processCollector:
+      enabled: true
